@@ -9,7 +9,12 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.9"
 matplotlib = "^3.9.1.post1"
+pyqt6 = "^6.7.1"
 
+[tool.poetry.scripts]
+compile = "tsunami:compile_program"
+simulate = "tsunami:run_program" 
+visualize = "tsunami:visualize"
 
 [build-system]
 requires = ["poetry-core"]
