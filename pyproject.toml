@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tsunami"
+version = "0.1.0"
+description = "Tsunami simulator"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+matplotlib = "^3.9.1.post1"
+pyqt6 = "^6.7.1"
+
+[tool.poetry.scripts]
+compile = "tsunami:compile_program"
+simulate = "tsunami:run_program" 
+visualize = "tsunami:visualize"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
